@@ -28,5 +28,3 @@ This project implements a relational database for managing hotel bookings, custo
 3. Execute the script to create the database, tables, constraints, views, functions, and stored procedures  
 4. Insert sample data with the provided `INSERT` statements  
 5. Run queries to explore data  
-
-## Database Structure (ERD Overview)
