@@ -26,3 +26,18 @@ CREATE TABLE Bookings (
     check_in DATE,
     check_out DATE
 );
+
+ALTER TABLE Rooms
+ADD CONSTRAINT fk_hotel
+FOREIGN KEY (hotel_id)
+REFERENCES Hotels(hotel_id);
+
+ALTER TABLE Bookings
+ADD CONSTRAINT fk_customer
+FOREIGN KEY (customer_id)
+REFERENCES Customers(customer_id);
+
+ALTER TABLE Bookings
+ADD CONSTRAINT fk_room
+FOREIGN KEY (room_id)
+REFERENCES Rooms(room_id);
