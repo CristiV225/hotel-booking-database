@@ -228,8 +228,6 @@ JOIN Rooms
 ON Hotels.hotel_id = Rooms.hotel_id
 GROUP BY Hotels.hotel_name;
 
--- HOTEL REVENUE
-
 SELECT
 Hotels.hotel_name,
 SUM(Rooms.price_per_night *
