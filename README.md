@@ -19,4 +19,7 @@ This project implements a relational database for managing hotel bookings, custo
 ## Technologies
 
 - SQL  
-- Microsoft SQL Server  
+- Microsoft SQL Server
+
+ ## Database Diagram
+![Database Diagram](Diagram_Database.jpg) 
