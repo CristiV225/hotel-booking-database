@@ -237,8 +237,6 @@ JOIN Rooms ON Bookings.room_id = Rooms.room_id
 JOIN Hotels ON Rooms.hotel_id = Hotels.hotel_id
 GROUP BY Hotels.hotel_name;
 
--- TOP CLIENTS
-
 SELECT
 Customers.name,
 COUNT(Bookings.booking_id) AS total_bookings
