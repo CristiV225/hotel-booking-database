@@ -19,9 +19,9 @@ RETURN @cost
 
 END;
 
--- test function
+
 SELECT dbo.CalculateBookingCost(1) AS BookingCost;
--- adding the payments for bookings
+
 INSERT INTO Payments (booking_id, amount, payment_date)
 VALUES
 (1, dbo.CalculateBookingCost(1), '2026-04-01'),  
