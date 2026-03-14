@@ -194,15 +194,12 @@ RETURN @cost
 
 END;
 
--- test function
 SELECT dbo.CalculateBookingCost(1) AS BookingCost;
--- adding the payments for bookings
+
 INSERT INTO Payments (booking_id, amount, payment_date)
 VALUES
 (1, dbo.CalculateBookingCost(1), '2026-04-01'),  
 (2, dbo.CalculateBookingCost(2), '2026-04-10');  
-
--- AVAILABLE ROOMS IN HOTEL
 
 SELECT room_number, price_per_night
 FROM Rooms
@@ -214,8 +211,6 @@ FROM Bookings
 WHERE '2026-05-01'
 BETWEEN check_in AND check_out
 );
-
--- NUMBER OF ROOMS PER HOTEL
 
 SELECT 
 Hotels.hotel_name,
